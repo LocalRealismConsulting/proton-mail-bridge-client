@@ -315,6 +315,7 @@ export interface FolderInfo {
   messages?: number;
   unseen?: number;
   uidNext?: number;
+  uidValidity?: string;
 }
 
 export interface BulkMatchCriteria {
