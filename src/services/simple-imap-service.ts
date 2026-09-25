@@ -283,6 +283,7 @@ function mapFolder(entry: ListResponse): FolderInfo {
     messages: entry.status?.messages,
     unseen: entry.status?.unseen,
     uidNext: entry.status?.uidNext,
+    uidValidity: entry.status?.uidValidity?.toString(),
   };
 }
 
@@ -611,6 +612,7 @@ export class SimpleIMAPService {
         messages: true,
         unseen: true,
         uidNext: true,
+        uidValidity: true,
       },
     });
 

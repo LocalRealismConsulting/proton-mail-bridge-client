@@ -651,7 +651,7 @@ const TOOLS = [
   },
   {
     name: "get_folders",
-    description: "Return all mailbox folders with message counts and unseen counts from the live IMAP session. Use to discover available folder names before targeting get_emails, move_email, or create_folder. Prefer sync_folders to force a fresh fetch when the folder list appears stale. Folders with noselect:true cannot be used for IMAP operations.",
+    description: "Return all mailbox folders with message counts, unseen counts, uidNext, and per-folder uidValidity from the live IMAP session. Use to discover available folder names before targeting get_emails, move_email, or create_folder. Prefer sync_folders to force a fresh fetch when the folder list appears stale. Folders with noselect:true cannot be used for IMAP operations.",
     annotations: { readOnlyHint: true },
     inputSchema: { type: "object", properties: {} },
   },
